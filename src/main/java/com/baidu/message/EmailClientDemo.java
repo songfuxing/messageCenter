@@ -1,6 +1,3 @@
-/**
- *
- */
 package com.baidu.message;
 
 import com.baidu.message.messageCenter.MessageCenter.MessageCenter;
@@ -8,7 +5,7 @@ import com.baidu.message.messageCenter.client.EmailClient;
 import com.baidu.message.messageCenter.server.EmailServer;
 
 /**
- * 调用demo
+ * email demo
  */
 public class EmailClientDemo {
     public static void run() {
