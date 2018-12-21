@@ -1,8 +1,8 @@
 package com.baidu.message;
 
-import com.baidu.message.messageCenter.MessageCenter.MessageCenter;
-import com.baidu.message.messageCenter.client.EmailClient;
-import com.baidu.message.messageCenter.server.EmailServer;
+import com.baidu.message.messagecenter.MessageCenter;
+import com.baidu.message.client.EmailClient;
+import com.baidu.message.server.EmailServer;
 
 /**
  * email demo
@@ -24,5 +24,9 @@ public class EmailClientDemo {
          */
         EmailClient emailClient = EmailClient.create();
         new Thread(emailClient).start();
+    }
+
+    public static void main(String[] args) {
+        run();
     }
 }

@@ -17,5 +17,5 @@ public class Constants {
     /**
      * 一分钟之内，令牌桶的最大容量。对应的是邮件服务器一分钟之内能发送的最大邮件数量
      */
-    public static final int TOKEN_BUCKET_SIZE= 60;
+    public static final int TOKEN_BUCKET_SIZE = 60;
 }

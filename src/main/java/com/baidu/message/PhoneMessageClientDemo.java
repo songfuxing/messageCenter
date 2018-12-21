@@ -1,8 +1,8 @@
 package com.baidu.message;
 
-import com.baidu.message.messageCenter.MessageCenter.MessageCenter;
-import com.baidu.message.messageCenter.client.PhoneMessageClient;
-import com.baidu.message.messageCenter.server.EmailServer;
+import com.baidu.message.client.PhoneMessageClient;
+import com.baidu.message.messagecenter.MessageCenter;
+import com.baidu.message.server.PhoneMessageServer;
 
 /**
  * 短信 demo
@@ -15,10 +15,9 @@ public class PhoneMessageClientDemo {
         MessageCenter.getInstance().start();
 
         /**
-         * 启动邮件服务
+         * 启动短信服务
          */
-        EmailServer.getInstance().start();
-
+        PhoneMessageServer.getInstance().start();
 
         /**
          * 创建短信客户端，发送短信
@@ -26,5 +25,9 @@ public class PhoneMessageClientDemo {
         PhoneMessageClient phoneMessageClient = PhoneMessageClient.create();
         new Thread(phoneMessageClient).start();
 
+    }
+
+    public static void main(String[] args) {
+        run();
     }
 }
